@@ -4,7 +4,8 @@ from matplotlib import pyplot as plt
 import numpy as np
 import networkx
 from skspatial.objects import Line, Points
-paths, attributes = svgpathtools.svg2paths("svgIn/0005.svg")
+#paths, attributes = svgpathtools.svg2paths("svgIn/0005.svg")
+paths, attributes = svgpathtools.svg2paths("svgOut/twisted_polygons.svg")
 
 all_endpoints = [p.start for p in paths]
 all_endpoints.extend([p.end for p in paths])
