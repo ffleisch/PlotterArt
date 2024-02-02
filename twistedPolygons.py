@@ -81,6 +81,16 @@ def test():
             plt.plot((np.real(s), np.real(e)), (np.imag(s), np.imag(e)), c=c)#,alpha=0.3, linewidth=1+15*intensity,zorder=1-intensity,solid_capstyle="round")
     return all_paths
 
+def twist_single(c,v1,n,angle,reps,skip=0):
+
+    p1=v1
+
+    all_paths=[draw_regular_polygon(c,p1,n,skip=skip)]
+    for i in range(reps):
+        p1=twist_polygon(c,p1,n,angle)
+        #p1-=(p1-center)*0.01/np.linalg.norm(p1-center)
+        all_paths.append(draw_regular_polygon(c,p1,n,skip=skip))
+    return all_paths
 def square_array():
     nx=7
     ny=10

@@ -3,7 +3,7 @@ import math
 import numpy as np
 from matplotlib import pyplot as plt
 import lissajouz
-import utilities
+import utilities_drawSvg
 
 
 a=4

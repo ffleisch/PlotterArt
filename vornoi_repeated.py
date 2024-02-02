@@ -3,7 +3,7 @@ from scipy.spatial import Voronoi,voronoi_plot_2d
 
 from matplotlib import pyplot as plt, patches
 
-import utilities
+import utilities_drawSvg
 rot_mat=lambda angle:np.array([[np.cos(-angle),-np.sin(-angle)],
                   [np.sin(-angle),np.cos(-angle)]])
 num=8

@@ -2,7 +2,7 @@ import numpy as np
 from matplotlib import pyplot as plt, patches
 import opensimplex as ops
 
-import utilities
+import utilities_drawSvg
 
 
 def draw_circle(x,y,r):
